@@ -15,6 +15,7 @@ NetBSD 中文世界
    :maxdepth: 3
 
    about.rst
+   contrib.rst
    source-tree-tour/source-tree-main.rst
 
 Indices and tables
