@@ -363,13 +363,19 @@ SUNXI_CCU_PREDIV 与 SUNXI_CCU_NM 类似，也用于分频寄存器，但是计�
        static const char *ahb1_parents[] = { "losc", "hosc", "axi", "pll_periph0" };
 
   * ``flag`` 设置为 ``SUNXI_CCU_PREDIV_POWER_OF_TWO`` 用于声明 ``div`` 字段对应的数值，在设置时必须为2的指数。
-  
+
 SUNXI_CCU_DIV
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 SUNXI_CCU_PHASE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+SUNXI_CCU_PREDIV 与 SUNXI_CCU_NM 类似，也用于分频寄存器，但是计算方法不同，其分频输出的时钟频率为：
+
+.. code-block:: c
+
+   output = (source)/pre/div
+   
 SUNXI_CCU_FIXED_FACTOR
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
