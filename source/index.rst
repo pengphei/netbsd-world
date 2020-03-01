@@ -17,6 +17,7 @@ NetBSD 中文世界
    about.rst
    contrib.rst
    source-tree-tour/source-tree-main.rst
+   porting-netbsd-arm-soc/porting-arm-soc.rst
 
 Indices and tables
 =======================================
